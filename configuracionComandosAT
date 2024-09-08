@@ -7,7 +7,7 @@ SoftwareSerial myBT(10,11);                           //Pin de conexión RX-->pi
 
 void setup(){
   Serial.begin(9600);                                 //Inicializar comunicación serial para ver y enviar los comandos AT(debe estar en 9600 baudios en el serial monitor)
-  Serial.print("Monitor serial preparado.");          //Mensaje para confirmar comunicación serie.
+  Serial.println("Monitor serial preparado.");          //Mensaje para confirmar comunicación serie.
   myBT.begin(38400);                                  //Inicializar velocidad de comunicación del modulo bluetooth.
 }
 void loop(){
